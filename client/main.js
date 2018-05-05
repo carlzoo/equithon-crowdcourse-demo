@@ -2,6 +2,8 @@ import { Template } from 'meteor/templating';
 import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
+import './coursecontent.html';
+import './coursecontent.css';
 
 Template.signup.events({
   'submit form': function() {
