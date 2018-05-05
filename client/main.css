@@ -10,28 +10,32 @@ body, html {
   margin: 0;
 }
 
-body {
+.bg-img {
+  /* z-index: -1; */
   height:100%;
-  /* width:100%; */
-  /* position: absolute; */
+  width:100%;
+  margin: 0;
+  /* position: relative; */
   background-image: url('/homepage-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* opacity: 0.5; */
 }
 
 .homepage {
+  height: 100%;
   /* padding-top: 1%; */
+  /* position: relative; */
 }
 
 .ctr-slogan {
+  /* position: absolute; */
   text-align: center;
   margin: auto;
   width: 80%;
   padding: 10px;
   /* TODO: VERTICAL ALIGN WITHOUT PADDING */
-  padding-top: 230px;
+  padding-top: 240px;
   /* vertical-align: middle; */
   display: flex;
   justify-content: center;
@@ -43,7 +47,7 @@ body {
   justify-content: center;
   align-items: center; */
   font-size: 52px;
-  text-align: left;
+  /* text-align: center; */
   margin: auto;
   /* width: 85%; */
   /* padding-top: 330px; */
@@ -52,8 +56,22 @@ body {
   left: 50%; */
 }
 
+#modapp {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  float: right;
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+}
+
+#modapp:hover {
+  font-weight: bolder;
+}
 #explore {
   background-color: #050E5C;
+  /* position: absolute; */
   /* padding: 10px; */
   padding-left: 25px;
   padding-right: 25px;
@@ -88,6 +106,8 @@ body {
 .top-btns {
   float: right;
   margin-right: 20px;
+  padding-top: 2%;
+  /* position: absolute; */
 }
 
 #signup-btn, #login-btn {
@@ -100,6 +120,7 @@ body {
   border: none;
   font-size: 16px;
   margin: 5px;
+  /* position: absolute; */
 }
 
 #signup-btn:hover, #login-btn:hover {
@@ -115,4 +136,58 @@ body {
 
 .hide {
   display: none;
+}
+
+#alert {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+#alert p, #alert button {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#alert button {
+  background-color: #120F9F;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100px;
+  font-size: 16px;
+}
+
+#alert button a {
+  text-decoration: none;
+  color: white;
+}
+/* #alert button {
+  displ
+} */
+nav.topnav ul{
+
+  list-style-type: none;
+}
+nav.topnav li {
+  display: inline;
+  padding: 15px;
+}
+nav.topnav a {
+  text-decoration: none;
+  color: black;
+}
+
+#explore-banner {
+  background-image: url(/explore-banner.png);
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+
+#explore-banner h2 {
+  color: #050E5C;
+
 }

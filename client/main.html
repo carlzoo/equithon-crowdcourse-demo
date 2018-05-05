@@ -4,26 +4,38 @@
 </head>
 
 <body>
-  <!-- <div class="bg-img"></div> -->
-  <!-- {{> buttons}} -->
-  {{> content}}
-  <!-- {{> signup}} -->
+
 </body>
+
+<!-- <div class="bg-img"></div> -->
+<!-- {{> buttons}} -->
+<!-- {{> content}}-->
+<!-- {{> signup}} -->
 
 <template name="content">
 
   <div class="homepage">
-    <div class="top-btns">
-      <button id="signup-btn">SIGN UP</button>
-      <button id="login-btn">LOG IN</button>
-    </div>
-    <div class="ctr-slogan">
-      <p>Explore knowledge from anywhere in the world, <br>for <span id="accent">free</span>.</p>
-    </div>
+    <div class="bg-img">
+      <div class="ctr-slogan">
+        <p>Explore knowledge from anywhere in the world, <br>for <span id="accent">free</span>.</p>
+      </div>
 
-    <button id="explore"><a href="explore.html">Explore the Courses</a></button>
+      <button id="explore"><a href="/explore">Explore the Courses</a></button>
+      <a href="" id="modapp">Apply to be a moderator >></a>
+    </div>
+    <!-- <img class="bg-img" src="/homepage-bg.jpg" alt="Homepage background"> -->
+
   </div>
 
+</template>
+
+<template name ="navbar">
+
+  <div class="top-btns">
+    <button id="signup-btn">SIGN UP</button>
+    <button id="login-btn">LOG IN</button>
+  </div>
+  {{> yield}}
 </template>
 
 <template name="signup">
@@ -38,5 +50,38 @@
       <input type="submit" value="Sign up">
     </form>
   </div>
+
+</template>
+
+<template name="topnav1">
+  <div id="alert">
+    <p>A live lecture is happening! Join Pysch 101 with Professor Pine to get started with your Psych degree!</p>
+    <button><a href="">Go now!</a></button>
+  </div>
+  <nav class="topnav">
+    <ul>
+      <li class="logo"><a href="/"><img src="/logo.png" alt=""></a></li>
+      <li class="nav"><a href="">Explore</a></li>
+      <li class="nav"><a href="">Categories</a></li>
+      <li class="nav"><a href="">My Courses</a></li>
+      <li class="nav"><a href="">My Edits</a></li>
+      <li class="user"></li>
+    </ul>
+  </nav>
+  {{> yield}}
+</template>
+
+<template name="explore">
+  <div id="explore-banner">
+    <div id="banner-content">
+      <h2>Transform what you learn and how you learn today</h2>
+      <input class="search" type="text" placeholder="Search...">
+    </div>
+
+  </div>
+
+</template>
+
+<template name="empty">
 
 </template>
