@@ -59,14 +59,15 @@
     <button><a href="">Go now!</a></button>
   </div>
   <nav class="topnav">
+    <a href="/"><img class="logo" src="/logo.png" alt=""></a>
+    <a href="" class="user"><img class="headshot" src="/headshot.jpg" alt=""></a>
     <ul>
-      <li class="logo"><a href="/"><img src="/logo.png" alt=""></a></li>
-      <li class="nav"><a href="">Explore</a></li>
-      <li class="nav"><a href="">Categories</a></li>
-      <li class="nav"><a href="">My Courses</a></li>
-      <li class="nav"><a href="">My Edits</a></li>
-      <li class="user"></li>
+      <li class="nav-items active-tab"><a href="">Explore</a></li>
+      <li class="nav-items"><a href="">Categories</a></li>
+      <li class="nav-items"><a href="">My Courses</a></li>
+      <li class="nav-items"><a href="">My Edits</a></li>
     </ul>
+
   </nav>
   {{> yield}}
 </template>
@@ -75,7 +76,13 @@
   <div id="explore-banner">
     <div id="banner-content">
       <h2>Transform what you learn and how you learn today</h2>
-      <input class="search" type="text" placeholder="Search...">
+      <div class="search">
+        <input id="search-field" type="text" placeholder="Search...">
+        <!-- <a href=""><img src="/searchicon.png" alt=""></a> -->
+        <!-- <input id="search-submit" type="submit"> -->
+      </div>
+
+      <!-- TODO: add a search icon in the search bar -->
     </div>
 
   </div>
