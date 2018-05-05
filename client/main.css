@@ -1,1 +1,118 @@
 /* CSS declarations go here */
+
+* {
+  font-family: Heebo;
+}
+
+body, html {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height:100%;
+  /* width:100%; */
+  /* position: absolute; */
+  background-image: url('/homepage-bg.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.5; */
+}
+
+.homepage {
+  /* padding-top: 1%; */
+}
+
+.ctr-slogan {
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  padding: 10px;
+  /* TODO: VERTICAL ALIGN WITHOUT PADDING */
+  padding-top: 230px;
+  /* vertical-align: middle; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ctr-slogan p {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  font-size: 52px;
+  text-align: left;
+  margin: auto;
+  /* width: 85%; */
+  /* padding-top: 330px; */
+  /* padding: 10px;
+  top: 50%;
+  left: 50%; */
+}
+
+#explore {
+  background-color: #050E5C;
+  /* padding: 10px; */
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 26px;
+  opacity: 0.82;
+  border: none;
+  border-radius: 10px;
+  height: 70px;
+  margin: auto;
+  display: block;
+  font-weight: lighter;
+  /* width: 50%; */
+  /* text-align: center; */
+}
+
+#explore a  {
+  text-decoration: none;
+  color: #fff;
+}
+
+#explore:hover {
+  opacity: 0.95;
+  cursor: pointer;
+}
+
+#accent {
+  color: #120F9F;
+  opacity: 0.85;
+  font-weight: bolder;
+}
+
+.top-btns {
+  float: right;
+  margin-right: 20px;
+}
+
+#signup-btn, #login-btn {
+  background-color: #242424;
+  opacity: 0.65;
+  color: white;
+  padding: 10px;
+  width: 150px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  margin: 5px;
+}
+
+#signup-btn:hover, #login-btn:hover {
+  opacity: 0.95;
+  cursor: pointer;
+}
+.sign-up {
+  /* display: block; */
+  background-color: #fefefe;
+  opacity: 0.9;
+  width: 25%;
+}
+
+.hide {
+  display: none;
+}

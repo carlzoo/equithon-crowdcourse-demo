@@ -1,0 +1,42 @@
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Heebo" rel="stylesheet">
+  <title>equithon-crowdcourse-demo</title>
+</head>
+
+<body>
+  <!-- <div class="bg-img"></div> -->
+  <!-- {{> buttons}} -->
+  <p>hi</p>
+  <!-- {{> signup}} -->
+</body>
+
+<template name="content">
+
+  <div class="homepage">
+    <div class="top-btns">
+      <button id="signup-btn">SIGN UP</button>
+      <button id="login-btn">LOG IN</button>
+    </div>
+    <div class="ctr-slogan">
+      <p>Explore knowledge from anywhere in the world, <br>for <span id="accent">free</span>.</p>
+    </div>
+
+    <button id="explore"><a href="explore.html">Explore the Courses</a></button>
+  </div>
+
+</template>
+
+<template name="signup">
+
+  <div class="sign-up hide">
+    <h2>Sign up</h2>
+    <form>
+      <input type="text" placeholder="Full name" name="fullname">
+      <input type="text" placeholder="Email address" name="email">
+      <input type="text" placeholder="Username" name="username">
+      <input type="text" placeholder="Password" name="password">
+      <input type="submit" value="Sign up">
+    </form>
+  </div>
+
+</template>
