@@ -1,0 +1,35 @@
+h1.coursetitlearea {
+    padding-left: 20%;
+}
+
+.coursemode {
+    font-weight:normal; 
+    font-size: 0.35em;
+}
+
+.lecturemenu {
+    padding-left: 0%;
+}
+
+.lecturelist {
+    list-style-type: none;
+}
+
+.lecturelist ul {
+    width: 50%;
+    display: table;
+    table-layout: fixed; /* optional */
+  }
+
+.lecturelist li button {
+    min-width: 25px;
+    max-width: 200px;
+    border: none;
+    background: none;
+    text-align: left;
+}
+
+p.lecturecontent {
+    float:right;
+    width: 60%;
+}
