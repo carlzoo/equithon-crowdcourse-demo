@@ -54,21 +54,24 @@
 </template>
 
 <template name="topnav1">
-  <div id="alert">
-    <p>A live lecture is happening! Join Pysch 101 with Professor Pine to get started with your Psych degree!</p>
-    <button><a href="">Go now!</a></button>
-  </div>
-  <nav class="topnav">
-    <a href="/"><img class="logo" src="/logo.png" alt=""></a>
-    <a href="" class="user"><img class="headshot" src="/headshot.jpg" alt=""></a>
-    <ul>
-      <li class="nav-items active-tab"><a href="">Explore</a></li>
-      <li class="nav-items"><a href="">Categories</a></li>
-      <li class="nav-items"><a href="">My Courses</a></li>
-      <li class="nav-items"><a href="">My Edits</a></li>
-    </ul>
+  <div class="headernav">
+    <div id="alert">
+      <p>A live lecture is happening! Join Pysch 101 with Professor Pine to get started with your Psych degree!</p>
+      <button><a href="">Go now!</a></button>
+    </div>
+    <nav class="topnav">
+      <a href="/"><img class="logo" src="/logo.png" alt=""></a>
+      <a href="" class="user"><img class="headshot" src="/headshot.jpg" alt=""></a>
+      <ul>
+        <li class="nav-items active-tab"><a href="">Explore</a></li>
+        <li class="nav-items"><a href="">Categories</a></li>
+        <li class="nav-items"><a href="">My Courses</a></li>
+        <li class="nav-items"><a href="">My Edits</a></li>
+      </ul>
 
-  </nav>
+    </nav>
+  </div>
+
   {{> yield}}
 </template>
 
