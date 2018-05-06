@@ -4,6 +4,7 @@ import { ReactiveVar } from 'meteor/reactive-var';
 import './main.html';
 import './coursecontent.html';
 import './coursecontent.css';
+import './active-tab.js';
 
 Template.signup.events({
   'submit form': function() {
