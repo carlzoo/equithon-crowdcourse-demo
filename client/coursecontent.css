@@ -41,3 +41,7 @@ div.subnav {
 div.maincontent{
     display:inline;
 }
+
+button.editcourse {
+    border:none;
+}
