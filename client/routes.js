@@ -1,3 +1,5 @@
+import './moar-routes.js';
+
 if(Meteor.isClient) {
   Router.configure({
     // the default layout

@@ -1,0 +1,80 @@
+h1.coursetitlearea {
+    padding-left: 20%;
+}
+
+.coursemode {
+    font-weight:normal; 
+    font-size: 0.35em;
+}
+
+.lecturemenu {
+    padding-left: 10%;
+}
+
+.lecturelist {
+    list-style-type: none;
+}
+
+.lecturelist ul {
+    width: 50%;
+    display: table;
+    table-layout: fixed; /* optional */
+  }
+
+.lecturelist li button {
+    min-width: 25px;
+    max-width: 200px;
+    border: none;
+    background: none;
+    text-align: left;
+}
+
+p.lecturecontent {
+    float:right;
+    width: 80%;
+}
+
+textarea.lecturecontent {
+    float:right;
+    width: 80%;
+    height: 50%;
+}
+
+div.subnav {
+    display:inline-block;
+}
+
+div.maincontent{
+    display:inline;
+}
+
+button.editcourse {
+    border:none;
+    background: none;
+}
+
+button.editcourse:hover {
+    cursor: pointer;
+}
+
+div.editactionbuttons {
+    float:right;
+    margin-right: 5%;
+}
+
+button.canceledit {
+    border:none;
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+    padding: 5px 20px;
+}
+
+button.submitforapproval {
+    border:none;
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+    padding: 5px 20px;
+    background-color: blue;
+}
