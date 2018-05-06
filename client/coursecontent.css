@@ -40,6 +40,18 @@ textarea.lecturecontent {
     height: 50%;
 }
 
+textarea.oldrev {
+    float:right;
+    width: 40%;
+    height: 50%;
+}
+
+textarea.newrev {
+    float:right;
+    width: 40%;
+    height: 50%;
+}
+
 div.subnav {
     display:inline-block;
 }
