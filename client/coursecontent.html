@@ -7,28 +7,11 @@
       
       </body>
 
-<template name="topnav2">
-    <div id="alert">
-        <p>A live lecture is happening! Join Pysch 101 with Professor Pine to get started with your Psych degree!</p>
-        <button><a href="">Go now!</a></button>
-    </div>
-    <nav class="topnav">
-        <ul>
-        <li class="logo"><a href="/"><img src="/logo.png" alt=""></a></li>
-        <li class="nav"><a href="">Explore</a></li>
-        <li class="nav"><a href="">Categories</a></li>
-        <li class="nav"><a href=""><u>My Courses</u></a></li>
-        <li class="nav"><a href="">My Edits</a></li>
-        <li class="user"></li>
-        </ul>
-    </nav>
-    {{> yield}}
-    </template>
-
     <template name = "coursecontent">
         
         <h1 class="coursetitlearea">Game Design, Prototyping and Development <span class="coursemode">Learning Mode</span></h1>
 
+        <div class = "subnav">
         <menu class = "lecturemenu">
                 <span class = "lecturemeuheader">Game Design</span>
             <ul class= "lecturelist">
@@ -49,7 +32,9 @@
         <menu class = "lecturemenu">
                 <span class = "lecturemeuheader">Game Development</span>
             </menu>
-
+            </div>
+        
+        <div class="maincontent">
         <p class="lecturecontent">
                 Lorem ipsum dolor sit amet, sed omnes eruditi id, in liber salutatus patrioque cum. Ex graecis accumsan philosophia eos. Et nec stet volumus laboramus. Delicata mnesarchum usu te, at nam purto disputationi, ius probo clita maluisset eu. Qui luptatum perpetua et.
 
@@ -71,5 +56,6 @@
                 
                 Accusata delicata ad sed, ad ubique aliquando nec, ad vix clita omnes. Hinc vitae tollit vis ut, luptatum hendrerit incorrupte ex vis. Agam mediocritatem et nec. Eum id ludus verear. Ei vis adolescens interpretaris, quo ut cetero noluisse tacimates, ad dicam constituam intellegebat eam. Id modus hendrerit quo. An eam adhuc malis labitur, falli percipitur et sea.
         </p>
+        </div>
 
     </template>
