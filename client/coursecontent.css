@@ -34,6 +34,12 @@ p.lecturecontent {
     width: 80%;
 }
 
+textarea.lecturecontent {
+    float:right;
+    width: 80%;
+    height: 50%;
+}
+
 div.subnav {
     display:inline-block;
 }
@@ -44,4 +50,31 @@ div.maincontent{
 
 button.editcourse {
     border:none;
+    background: none;
+}
+
+button.editcourse:hover {
+    cursor: pointer;
+}
+
+div.editactionbuttons {
+    float:right;
+    margin-right: 5%;
+}
+
+button.canceledit {
+    border:none;
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+    padding: 5px 20px;
+}
+
+button.submitforapproval {
+    border:none;
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+    padding: 5px 20px;
+    background-color: blue;
 }
