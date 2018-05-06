@@ -164,9 +164,33 @@ body, html {
   text-decoration: none;
   color: white;
 }
-/* #alert button {
-displ
-} */
+
+#mod-alert {
+  background-color: #120F9F;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+#mod-alert p, #mod-alert button {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#mod-alert button {
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 300px;
+  font-size: 16px;
+}
+
+#mod-alert button a {
+  text-decoration: none;
+  color: white;
+}
 
 .headernav {
   box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
@@ -253,11 +277,106 @@ nav.topnav a {
   font-size: 15px;
 }
 
-
 .active-tab {
   /* text-decoration: underline; */
   border-bottom: 0.25em solid #050E5C;
   /* color:YOUR-LINK-COLOR; */
   padding-bottom:3px;
 
+}
+
+.explore-main {
+  display: block;
+  margin: auto;
+  width: 90%;
+}
+
+.explore-header {
+  /* display: inline; */
+}
+
+.explore-header h3 {
+  /* display: inline; */
+  /* float: left; */
+}
+
+.explore-header a {
+  /* display: inline; */
+  text-decoration: none;
+  color: black;
+  /* float: right; */
+}
+
+#card-bundle {
+  /* display: inline; */
+  margin-top: 5%;
+  /* align-items: center; */
+  /* text-align: center; */
+  /* margin: auto; */
+  /* width: 90%; */
+}
+
+.card-details {
+  padding: 4%;
+  text-align: left;
+}
+.card-img {
+  /* max-height: 50%; */
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    /* margin: auto; */
+    text-align: center;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 100%;
+    margin: 0.75%;
+    /* display: inline; */
+}
+
+.card-nav {
+  display: inline-block;
+  margin-bottom: 5%;
+  width: 100%;
+}
+
+.card-title {
+    color: black;
+    font-size: 15px;
+}
+
+.card-desc {
+  color: black;
+  font-size: 12px;
+  padding-bottom: 20%;
+}
+
+.card-btns {
+  margin-bottom: 5%;
+}
+.card-btns button{
+  border: none;
+  padding: 2%;
+  width: 60px;
+  border-radius: 5px;
+  /* float: right; */
+}
+
+.card-btns a {
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* .edit-card, .enroll-card {
+  border: none;
+
+} */
+.enroll-card {
+  background-color: #050E5C;
+  border: none
+}
+.enroll-card a {
+  color: white;
 }

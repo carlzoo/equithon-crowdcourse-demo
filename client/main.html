@@ -53,7 +53,7 @@
 
 </template>
 
-<template name="topnav1">
+<template name="user-topnav">
   <div class="headernav">
     <div id="alert">
       <p>A live lecture is happening! Join Pysch 101 with Professor Pine to get started with your Psych degree!</p>
@@ -75,6 +75,28 @@
   {{> yield}}
 </template>
 
+<!--TOP NAV FOR MODERATORS-->
+<template name="mod-topnav">
+  <div class="headernav">
+    <div id="mod-alert">
+      <p>You are currently logged in as a moderator.</p>
+      <button><a href="">Switch to my regular account</a></button>
+    </div>
+    <nav class="topnav">
+      <a href="/"><img class="logo" src="/logo.png" alt=""></a>
+      <a href="" class="user"><img class="headshot" src="/headshot.jpg" alt=""></a>
+      <ul>
+        <li class="nav-items active-tab"><a href="">Pending</a></li>
+        <li class="nav-items"><a href="">Approved</a></li>
+        <li class="nav-items"><a href="">Rejected</a></li>
+      </ul>
+
+    </nav>
+  </div>
+
+  {{> yield}}
+</template>
+
 <template name="explore">
   <div id="explore-banner">
     <div id="banner-content">
@@ -88,6 +110,66 @@
       <!-- TODO: add a search icon in the search bar -->
     </div>
 
+  </div>
+  <div class="explore-main">
+    <div class="explore-header">
+      <h3>Trending Courses</h3>
+      <a href="">See more...</a>
+    </div>
+
+    <div class="card-nav">
+      <div id="card-bundle">
+        <div class="card">
+          <img class="card-img" src="/default-course.jpg" alt="Book" style="width: 100%;">
+          <div class="card-details">
+            <h4 class="card-title">Intro to Microbiology</h4>
+            <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+          <div class="card-btns">
+            <button class="edit-card"><a href="">Edit</a></button>
+            <button class="enroll-card"><a href="">Enroll</a></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img" src="/default-course.jpg" alt="Book" style="width: 100%;">
+          <div class="card-details">
+            <h4 class="card-title">Intro to Microbiology</h4>
+            <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+          <div class="card-btns">
+            <button class="edit-card"><a href="">Edit</a></button>
+            <button class="enroll-card"><a href="">Enroll</a></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img" src="/default-course.jpg" alt="Book" style="width: 100%;">
+          <div class="card-details">
+            <h4 class="card-title">Intro to Microbiology</h4>
+            <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+          <div class="card-btns">
+            <button class="edit-card"><a href="">Edit</a></button>
+            <button class="enroll-card"><a href="">Enroll</a></button>
+          </div>
+        </div>
+
+        <div class="card">
+          <img class="card-img" src="/default-course.jpg" alt="Book" style="width: 100%;">
+          <div class="card-details">
+            <h4 class="card-title">Intro to Microbiology</h4>
+            <p class="card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+          </div>
+          <div class="card-btns">
+            <button class="edit-card"><a href="">Edit</a></button>
+            <button class="enroll-card"><a href="">Enroll</a></button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
   </div>
 
 </template>
