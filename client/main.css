@@ -278,11 +278,8 @@ nav.topnav a {
 }
 
 .active-tab {
-  /* text-decoration: underline; */
   border-bottom: 0.25em solid #050E5C;
-  /* color:YOUR-LINK-COLOR; */
   padding-bottom:3px;
-
 }
 
 .explore-main {
@@ -292,29 +289,39 @@ nav.topnav a {
 }
 
 .explore-header {
-  /* display: inline; */
+  display: inline-block;
+  margin: .75%;
+  /* margin-left: 0;
+  margin-right: 0; */
+  /* padding-right: 1%; */
+  padding-top: 1%;
+  width: 100%;
+  margin-bottom: 0;
 }
 
 .explore-header h3 {
-  /* display: inline; */
-  /* float: left; */
+  display: inline-block;
+  text-align: left;
+  float: left;
 }
 
 .explore-header a {
-  /* display: inline; */
+  display: inline-block;
   text-decoration: none;
   color: black;
-  /* float: right; */
+  text-align: right;
+  float: right;
 }
 
-#card-bundle {
-  /* display: inline; */
-  margin-top: 5%;
-  /* align-items: center; */
-  /* text-align: center; */
-  /* margin: auto; */
-  /* width: 90%; */
-}
+/* #card-bundle {
+  display: inline;
+  margin-top: 1%;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 90%;
+  overflow-y: hidden;
+} */
 
 .card-details {
   padding: 4%;
@@ -326,6 +333,7 @@ nav.topnav a {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     max-width: 300px;
+    /* width: 1%; */
     /* margin: auto; */
     text-align: center;
     position: relative;
@@ -380,3 +388,11 @@ nav.topnav a {
 .enroll-card a {
   color: white;
 }
+
+/* @media screen and (min-width: 950px) {
+  .top-nav a:not(:first-child) { display: none; }
+  .top-nav a.icon {
+    float: right;
+    display: block;
+  }
+} */

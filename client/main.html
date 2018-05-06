@@ -53,7 +53,7 @@
 
 </template>
 
-<template name="user-topnav">
+<template name="usertopnav">
   <div class="headernav">
     <div id="alert">
       <p>A live lecture is happening! Join Pysch 101 with Professor Pine to get started with your Psych degree!</p>
@@ -63,10 +63,10 @@
       <a href="/"><img class="logo" src="/logo.png" alt=""></a>
       <a href="" class="user"><img class="headshot" src="/headshot.jpg" alt=""></a>
       <ul>
-        <li class="nav-items active-tab"><a href="">Explore</a></li>
-        <li class="nav-items"><a href="">Categories</a></li>
-        <li class="nav-items"><a href="">My Courses</a></li>
-        <li class="nav-items"><a href="">My Edits</a></li>
+        <li id="nav1" class="nav-items active-tab"><a href="">Explore</a></li>
+        <li id="nav2" class="nav-items"><a href="">Categories</a></li>
+        <li id="nav3" class="nav-items"><a href="">My Courses</a></li>
+        <li id="nav4" class="nav-items"><a href="">My Edits</a></li>
       </ul>
 
     </nav>
@@ -76,7 +76,7 @@
 </template>
 
 <!--TOP NAV FOR MODERATORS-->
-<template name="mod-topnav">
+<template name="modtopnav">
   <div class="headernav">
     <div id="mod-alert">
       <p>You are currently logged in as a moderator.</p>
@@ -113,12 +113,20 @@
   </div>
   <div class="explore-main">
     <div class="explore-header">
-      <h3>Trending Courses</h3>
-      <a href="">See more...</a>
+      <!-- <h3>Trending Courses</h3>
+      <a href="">See more...</a> -->
+      <table style="width: 100%;">
+        <tr>
+          <td style="font-size: 18px;">Trending Courses</td>
+          <td style="font-size: 14px; text-align: right; padding-right: 3%;">
+            <a style="text-decoration: none; color: black;" href="">See more...</a>
+          </td>
+        </tr>
+      </table>
     </div>
 
     <div class="card-nav">
-      <div id="card-bundle">
+      <!-- <div id="card-bundle"> -->
         <div class="card">
           <img class="card-img" src="/default-course.jpg" alt="Book" style="width: 100%;">
           <div class="card-details">
@@ -168,7 +176,7 @@
         </div>
 
 
-      </div>
+      <!-- </div> -->
     </div>
   </div>
 

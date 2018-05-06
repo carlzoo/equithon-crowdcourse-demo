@@ -18,6 +18,6 @@ if(Meteor.isClient) {
 
   Router.route('/explore', function () {
     this.render('explore');
-    this.layout('mod-topnav');
+    this.layout('usertopnav');
   });
 }

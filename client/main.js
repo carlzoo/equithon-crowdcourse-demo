@@ -3,24 +3,6 @@ import { ReactiveVar } from 'meteor/reactive-var';
 
 import './main.html';
 
-// Template.hello.onCreated(function helloOnCreated() {
-//   // counter starts at 0
-//   this.counter = new ReactiveVar(0);
-// });
-//
-// Template.hello.helpers({
-//   counter() {
-//     return Template.instance().counter.get();
-//   },
-// });
-//
-// Template.hello.events({
-//   'click button'(event, instance) {
-//     // increment the counter when button is clicked
-//     instance.counter.set(instance.counter.get() + 1);
-//   },
-// });
-
 Template.signup.events({
   'submit form': function() {
     event.preventDefault();
@@ -37,5 +19,21 @@ Template.signup.events({
         fullname: fullname
       }
     });
+  }
+});
+
+Template.usertopnav.events({
+  'click li.nav-items': function(event) {
+    console.log(event.currentTarget.id);
+    $('.active-tab').removeClass('active-tab');
+    $(event.currentTarget).addClass('active-tab');
+  }
+});
+
+Template.modtopnav.events({
+  'click li.nav-items': function(event) {
+    console.log(event.currentTarget.id);
+    $('.active-tab').removeClass('active-tab');
+    $(event.currentTarget).addClass('active-tab');
   }
 });
