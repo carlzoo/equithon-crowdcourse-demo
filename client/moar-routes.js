@@ -8,7 +8,7 @@ Router.route('/course/1', function () {
     this.layout('user-topnav');
   });
 
-Router.route('/course/1/edit/2', function () {
+  Router.route('/course/1/edit/2', function () {
     this.render('pendingedit');
     this.layout('user-topnav');
   });
